@@ -1,0 +1,13 @@
+body {
+  background-color: #eeeeee;
+  font-family: "helvetica", sans-serif;
+  font-size: 16px;
+  transform: translate3d(0, 0, 0);
+  background: linear-gradient(135deg, $colorMainDarker 0%, $colorSecundaryDarker 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+
+  h2 {
+    color: $titleColor;
+  }
+
+}

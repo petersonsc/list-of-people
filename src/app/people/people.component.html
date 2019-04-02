@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>List of People: </h2>
+  <div class="flex-container">
+    <div class="flex-items" *ngFor="let person of listOfPeople[0]"
+        [ngClass]="{'open' : person.id === cardOpened}" (click)="openCard(person)">
+      <div class="front-facing">
+        <img src="../../assets/images/blank-profile-picture.png" width="200px" alt="Foto de perfil">
+        <h3 class="title">Nome: {{person.name}}</h3>
+      </div>
+      <div class="back-facing">
+        <h4>Informações</h4>
+        <p>{{person.disclosableInfo}}</p>
+      </div>
+    </div>
+  </div>
+</div>
