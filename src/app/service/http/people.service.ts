@@ -8,7 +8,7 @@ export class PeopleService {
 
   constructor(private http: HttpClient) { }
 
-  configUrl = 'http://localhost:8090/rest/people';
+  configUrl = 'http://localhost:3000/rest/people';
 
   getPeople() {
     return this.http.get(this.configUrl);
